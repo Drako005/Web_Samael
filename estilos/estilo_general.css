@@ -769,10 +769,10 @@ audio{
 /* Estilos para móviles */
 @media (max-width: 600px) {
     h1.titulo {
-        font-size: 25px;
+        font-size: 5vw;
       }
       .pegatina{
-        max-width: 30px;
+        max-width: 5vw;
         margin-left: 10px;
       }
       .boton_registro a{
