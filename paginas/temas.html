@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Zona de Bajas Emisiones</title>
+	<meta charset="UTF8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../estilos/estilo_general.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../media/logo_sinfondo.png">
+</head> 
+<body>
+	<header>
+        <div>
+            <a href="../index.html"><img src="../media/logo_sinfondo.png" id="logo"></a>
+        </div>
+
+        <div id="titulo">
+            <a href="../index.html" class="enlace_sinEstilo"><h1 class="titulo">Zona de <img src="../media/foto_b.png" class="pegatina"> ajas Emisiones</h1></a>
+        </div>
+
+        <div id="espaciador"><span class="boton_pc"><a href="registro.html" class="boton_registro">Registro</a></span></div>
+
+    </header>
+
+    <nav id="navbar">
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul class="menu" id="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="contenido.html">¿Qué es?</a></li>
+            <li>
+                <a href="temas.html">Coches <span class="coche_emoji">🚗</span></a>
+                <ul class="submenu">
+                    <li><a href="temas.html#seat">SEAT 1430</a></li>
+                    <li><a href="temas.html#c15">C15</a></li>
+                    <li><a href="temas.html#pickup">PICKUP</a></li>
+                    <li><a href="emas.html#nissan">NISSAN S-Cargo</a></li>
+                </ul>
+            </li>
+            <span class="boton_movil"><li><a href="registro.html">Registro</a></li></span>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <article class="texto_especial">
+            <p class="coches_texto">Los siguientes coches no pueden entrar a las Zonas de Bajas Emisiones debido a su antigüedad y su capacidad contaminante.</p>
+        </article>
+        <div class="contenedor_foto_parrafo">
+                <article class="medio" id="seat">
+                    <img src="../media/coche_torrente.png" class="foto_coche">
+                </article>
+            
+                <article class="medio">
+                    <h2 class="nombre_coche">SEAT 1430 de Jose Luis Torrente</h2>
+                    <p class="coches_texto">Este coche no solo respira humo y anarquía, también tiene la capacidad de infiltrarse en cualquier zona de bajas emisiones sin pestañear.
+                    Si alguna vez ves este vehículo surcando las calles, recuerda: las zonas de bajas emisiones no son rivales para el espíritu indomable del SEAT de Torrente.</p>
+                </article>
+
+
+        </div>
+        <hr class="separar_coches">
+        <div class="contenedor_foto_parrafo">
+                <article class="medio" id="c15">
+                    
+                    <img src="../media/c15.jpg" class="foto_coche">
+                </article>
+            
+                <article class="medio" >
+                    <h2>⚡C15⚡</h2>
+                    <p class="coches_texto">En plena batalla contra las zonas de bajas emisiones, mientras los coches eléctricos se deslizan en silencio y los híbridos presumen de su "modo-eco", hay una guerrera que no pasa de moda: la Citroën C15.
+                    Con más humo que un tren a vapor y el inconfundible sonido de una lavadora en spin eterno, la C15 entra  con la confianza de quien sabe que su tiempo en este mundo es limitado... pero legendario.
+                    </p>
+                    
+                    
+                </article>
+        </div>
+        <hr class="separar_coches">
+        <div class="contenedor_foto_parrafo">
+                <article class="medio" id="pickup">
+                    
+                    <img src="../media/pickup.jpg" class="foto_coche">
+                </article>
+
+                <article class="medio">
+                    <h2>Pickup Vintage</h2>
+                    <p class="coches_texto">En un mundo donde los coches brillan como joyas y se deslizan suavemente por las avenidas, emerge un guerrero que desafía el paso del tiempo, con mas noches que la luna y el encanto de un viejo rockero que ha vivido mil aventuras, este camión vintage posee una carrocería adornada por el paso del tiempo.</p>
+                    
+                    
+                </article>
+
+        </div>
+        <hr class="separar_coches">
+        <div class="contenedor_foto_parrafo">
+                <article class="medio" id="nissan">
+                    <img src="../media/nissan.jpg" class="foto_coche">
+                </article>
+                <article class="medio">
+                    <h2>Nissan S-Cargo</h2>
+                    <p class="coches_texto">Este bólido, con su diseño que desafía toda lógica automotriz,  evoca una sensación de nostalgia, como si hubiera salido de un cuento de hadas de los años 90. No se preocupa por la velocidad ni por las tendencias modernas, se desliza por la ciudad convirtiendo cada trayecto en una aventura.</p>
+                </article>
+        </div>
+        <div class="titulo_coches" id="esconder_titulo_canvas">
+            <h2>La batalla de la contaminacion</h2>
+            <h3>Torrente VS c15</h3>
+        </div>
+        <div class="canvas_coches" id="esconder_canvas">
+            <canvas id="canvaTorrente" width="600" height="400" class="canvas1"></canvas>
+            <button class="pedal" id="activar_coches" onmousedown="activar_funciones()" onmouseup="desactivar_funciones()">ACTIVAR</button>
+            <canvas id="canvaC15" width="600" height="400" class="canvas2"></canvas>
+        </div>
+
+
+
+    </div>
+    
+
+
+    <footer>
+        <div class="redes">
+            <a class="x" href="https://x.com/?lang=es" target="_blank"></a>
+            <a class="youtube" href="https://www.youtube.com/" target="_blank"></a>
+            <a class="instagram" href="https://www.instagram.com/" target="_blank"></a>
+            <a class="facebook" href="https://www.facebook.com/?locale=es_ES" target="_blank"></a>
+        </div>
+        <p>© Samael González 2024</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
