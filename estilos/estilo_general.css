@@ -1,0 +1,1215 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    background-color: #2196F3;
+    display: flex;
+    max-width: 100%;
+    text-align: center;
+}
+
+h1.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    text-shadow: 
+    0 0 5px #69a207,  
+    0 0 10px #f8ff33, 
+    2px 2px 0 #d9ff05, 
+    -2px -2px 15px #000000, 
+    5px 5px 30px rgba(204, 255, 0, 0.7);
+    display: flex;
+    align-items: center;
+}
+
+h1.titulo2{
+    color: black;
+    font-size: 40px;
+}
+
+h2.titulo{
+        font-size: 2.5rem;
+        color: #313131;
+        text-align: center; 
+        margin: 20px 0;
+        padding: 10px; 
+}
+
+.registro{
+    color:black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#logo{
+    flex-basis: 10%;
+    max-width: 120px;
+    transition: transform 0.6s ease;
+}
+#logo:hover{
+    transform: scale(1.1);
+}
+#titulo{
+    text-align: center; 
+    margin: auto;
+}
+#espaciador {
+    display: flex;                
+    justify-content: center;     
+    align-items: center;         
+    flex-basis: 10%;             
+}
+.boton_registro{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.721);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+#espaciador a:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 1.5em;
+    transform: scale(1.1);
+  }
+
+nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding:10px;
+    background-color: #2196F3;
+    box-shadow: 
+        0 10px 10px #2196F3, 
+        0 15px 15px #2195f38e,
+        0 20px 40px #2195f312;
+    transition: all 0.3s ease;
+    max-height: auto;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+nav ul li{
+    position: relative;
+    flex: 1; 
+    text-align: center;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: rgb(11, 3, 56);
+    background-color: #7878784f;
+    border-radius: 10px;
+}
+
+nav ul li ul {
+    background-color: #2196F3;
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    list-style-type: none;
+    border-radius: 0 0 40px 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li ul li {
+    padding: 10px 15px;
+}
+
+nav ul li:hover ul {
+    display: block;
+    z-index: 1000;
+    box-shadow: 
+        0 10px 10px #2196F3, 
+        0 15px 15px #2195f38e,
+        0 20px 30px #2195f312;
+    transition: all 0.3s ease;
+}
+
+nav ul li ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; 
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    color: rgb(11, 3, 56);
+    background-color: #7878784f;
+    border-radius: 10px;
+}
+
+div.contenido{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    flex: 1;
+    background-color: rgba(245, 245, 220);
+    padding-bottom: 40px;
+    background-color: #E0F7FA;
+    padding-top: 10px;
+    
+}
+
+article.medio{
+    margin: 0 auto;
+    width: 45%;
+    max-width: 45%;
+    text-align: center;
+    padding-top: 20px;
+}
+article.texto_especial{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 90%;
+    text-align: center;
+}
+
+div.contenido_registro {
+    height: auto;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    text-align: center;
+    flex: 1;
+    background-color: #E0F7FA;
+    padding-bottom: 40px;
+    gap: 0; 
+}
+
+article.medio_registro {
+    display: flex;
+    flex-direction: column;
+}
+
+article.tercio{
+    margin: auto;
+    width: 33%;
+    max-width: 33%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+article p{
+    text-align: justify;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 18px;
+    background-color: #f9f9f9ab;
+    border: 4px solid black;
+    border-radius: 30px;
+}
+
+article.completo{
+    margin: auto;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+footer{
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 5px 5px #505050;
+}
+.redes{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.redes .x{
+    padding: 25px;
+    margin: 10px;
+    background-image: url('../media/redes_X.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.redes .instagram{
+    padding: 25px;
+    margin: 10px;
+    background-image: url('../media/icono_instagram.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.redes .youtube{
+    padding: 25px;
+    margin: 10px;
+    background-image: url('../media/icono_youtube.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.redes .facebook{
+    padding: 25px;
+    margin: 10px;
+    background-image: url('../media/icono_facebook.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+form{
+    background: linear-gradient(to bottom, #d0f0c0, #a0d99e);
+	font-size: 1.2em;
+	padding:40px;
+	border-radius: 70px;
+	overflow: auto;
+	display: inline-block;
+    box-shadow: 0 6px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+label{
+    font-weight: bold;
+}
+label.alinear{
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+label.alinear:hover{
+    transform: scale(1.02);
+}
+
+input{
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px;
+    font-size: 1.1em;
+    transition: border-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.rojo:hover {
+    border-color: #ff0033; 
+    box-shadow: 0 0 3px #ff0033, 0 0 8px #ff0033, 0 0 10px #ff0033;
+}
+.amarillo:hover {
+    border-color: #ffcc00; 
+    box-shadow: 0 0 3px #ffcc00, 0 0 8px #ffcc00, 0 0 10px #ffcc00; 
+}
+.verde:hover {
+    border-color: #3cfd63; 
+    box-shadow: 0 0 3px #3cfd63, 0 0 8px #3cfd63, 0 0 10px #3cfd63; 
+}
+
+select{
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+button{
+    padding: 15px 30px; 
+    margin-top: 10px;
+}
+
+select{
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+select:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #28a745;
+}
+
+input[type="checkbox"] {
+    accent-color: #1baa4a; 
+}
+
+
+.imagen_zbe {
+    border: 5px solid rgba(73, 73, 73, 0.6); 
+    box-shadow: 0 0 10px 10px rgba(73, 73, 73, 0.6); 
+    width: 80%; 
+    max-width: 400px; 
+    height: 400px; 
+    
+    background-image: url("../media/zbe_bilbao.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: auto;
+    border-radius: 30px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* Pseudo-elemento para el texto en hover */
+.imagen_zbe::after {
+    content: "Zona de bajas emisiones de Bilbao"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.664); 
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0; 
+    transition: opacity 0.5s linear; 
+
+}
+
+.imagen_zbe:hover::after {
+    opacity: 1; 
+}
+
+/*Madrid*/
+.imagen_zbe_madrid {
+    border: 5px solid rgba(73, 73, 73, 0.6);
+    box-shadow: 0 0 10px 10px rgba(73, 73, 73, 0.6); 
+    width: 80%; 
+    max-width: 400px; 
+    height: 400px; 
+    
+    background-image: url("../media/zbe_bilbao.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 30px;
+    position: relative; 
+    overflow: hidden; 
+    
+}
+
+/* Pseudo-elemento para el texto en hover */
+.imagen_zbe_madrid::after {
+    content: "Zona central de Madrid"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.664); 
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+}
+
+.imagen_zbe_madrid:hover::after {
+    opacity: 1; 
+}
+
+p.descripcion{
+    margin: 10px;
+    width: 70%; 
+    margin: 0 auto; 
+    line-height: 1.8;
+    padding: 20px;  
+    border: 2px solid black;  
+    border-radius: 20px; 
+    background-color: #f9f9f9ab;  
+    box-shadow: 10px -10px 0px rgb(0, 0, 0);
+}
+p.descripcion2{
+    margin-top: 10px;
+    width: 70%; 
+    margin: 0 auto;
+    line-height: 1.7; 
+    padding: 20px;  
+    border: 2px solid black;  
+    border-radius: 20px; 
+    background-color: #f9f9f9ab;  
+    box-shadow: -10px 10px 0px rgb(0, 0, 0); 
+    transition: transform 0.6s ease, border 0.6s ease, box-shadow 0.6s ease;
+}
+p.descripcion2:hover, p.descripcion3:hover{
+    border: 2px solid rgb(151, 151, 151);  
+    transform: scale(1.03);
+    box-shadow: -10px 10px 0px rgb(151, 151, 151); 
+}
+
+p.descripcion3{
+    margin: 20px;
+    margin: 0 auto;
+    line-height: 1.4; 
+    padding: 15px;  
+    border: 2px solid black;  
+    border-radius: 20px;  
+    background-color: #f9f9f9ab;  
+    box-shadow: -10px 10px 0px rgb(0, 0, 0); 
+    transition: transform 0.6s ease, border 0.6s ease, box-shadow 0.6s ease;
+}
+
+#enlace {
+    font-size: inherit;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+    display: inline-block; 
+}
+#enlace:hover {
+    transform: scale(1.1);
+}
+.enlace_sinEstilo{
+    text-decoration: none;
+}
+
+.foto_coche {
+    border-radius: 30px;
+    max-width:80%;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0px 6px 20px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.8s ease;
+}
+
+
+.foto_coche:hover {
+    transform: scale(1.05); 
+    filter: brightness(1.05);
+    box-shadow: 0px 6px 10px 10px rgba(0, 0, 0, 0.7);
+    filter: grayscale(100%);
+}
+
+
+.coches_texto{
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, border 0.3s ease;
+    
+}
+
+.coches_texto:hover{
+    transform: scale(1.01);
+    border: 4px solid rgb(211, 142, 24);
+}
+
+
+
+.contenedor_foto_parrafo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    
+}
+
+
+
+.contenedor_foto_parrafo p {
+    text-align: center;
+}
+
+span.negrita{
+    font-weight: bold;
+}
+span.cursiva{
+    font-style: italic;
+}
+span.subrayado{
+    text-decoration: underline;
+}
+
+/*Estilos del mapa*/
+iframe {
+    max-width: 600px;
+    max-height: 600px;
+    border: 0;
+    border-radius: 40px;
+    box-shadow: 0 0 10px 10px rgb(170, 129, 16);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+article.contenedor_mapa{
+    margin-top: 20px;
+    margin: auto;
+    padding: 20px;
+    max-height: 100%;
+    width: 50%;
+    max-width: 50%;
+    text-align: center;
+}
+iframe:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 15px rgb(224, 173, 31);
+    
+}
+
+/*Fin estilos mapa*/
+
+
+
+/*ESTILO DEL BOTON*/
+.pushable {
+    position: relative;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    outline-offset: 4px;
+    outline-color: deeppink;
+    transition: filter 250ms;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: hsl(138, 83%, 33%);
+    border-radius: 8px;
+    filter: blur(2px);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(
+      to right,
+      hsl(138, 83%, 33%) 0%,
+      hsl(138, 83%, 49%) 8%,
+      hsl(138, 83%, 39%) 92%,
+      hsl(138, 83%, 29%) 100%
+    );
+  }
+  
+  .front {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    background: hsl(138, 83%, 33%);
+    padding: 16px 32px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .pushable:hover {
+    filter: brightness(110%);
+  }
+  
+  .pushable:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+  /*FIN ESTILO DEL BOTON*/
+
+  .pegatina{
+    max-width: 60px;
+    margin-left: 15px;
+  }
+
+  .nombre_coche {
+    font-size: 1.5em;
+}
+
+.canvas1 {
+    background-color: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.canvas2 {
+    background-color: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.pedal {
+    text-align: center;
+    background-color: #444; 
+    color: white;          
+    border: none;         
+    border-radius: 20px;
+    height: 180px;    
+    width: auto;
+    font-size: 1em;     
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    transition: background-color 0.7s ease, transform 0.7s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pedal:active {
+    transform: translateY(15px); 
+    background-color: #666; /* Color más claro al presionar */
+}
+
+div.canvas_coches{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    overflow: hidden;
+}
+div.titulo_coches{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+div.titulo_coches h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #c98b05; 
+    text-shadow:
+        0 0 10px #ffae00,
+        0 0 20px #ff4500,  
+        0 0 30px #ffd700,  
+        0 0 40px #fb7241, 
+        0 0 50px #b22222,  
+        0 0 60px #000000; 
+}
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none; 
+    
+}
+
+audio{
+    width: 40%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    h1.titulo {
+        font-size: 25px;
+      }
+      .pegatina{
+        max-width: 30px;
+        margin-left: 10px;
+      }
+      .boton_registro a{
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.721);
+        padding: 10px;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+    .boton_registro a:hover {
+        background: #315cfd;
+        color: white;
+        font-size: 15px;
+        transform: scale(1);
+      }
+      
+      header{
+        background-color: #2196F3;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+    }
+    #logo{
+        flex-basis: 10%;
+        max-width: 120px;
+        display: none;
+        transition: transform 0.6s ease;
+    }
+    #logo:hover{
+        transform: scale(1.1);
+    }
+    #navbar {
+        background-color: #2196F3;
+        color: #fff;
+        padding: 1rem;
+        position: relative;
+    }
+    #navbar a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #navbar ul {
+        list-style: none;
+    }
+    #navbar ul li {
+        padding: 0.5rem 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: auto;
+        background-color: #2196F3;
+        margin-left: 10px;
+        text-align: center;
+        
+    }
+    .menu li {
+        text-align: center;
+        
+        text-align: center;
+        
+    }
+    .submenu {
+        display: none;
+        border-radius: 0px;
+        box-shadow: 0;
+    }
+    .menu.active {
+        display: flex; 
+        border-radius: 20px;
+        
+    }
+    .menu li:hover > .submenu {
+        display: block;
+        background-color: #0d497a;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+    .coche_emoji{
+        display: none;
+    }
+    .boton_pc{
+        display: none;
+    }
+    .boton_movil{
+        display: block;
+    }
+    #ocultar_formulario{
+        display: none;
+    }
+    article.medio_registro {
+        display: flex;
+        flex-direction: column;
+        margin: 0; 
+        width: auto; 
+        text-align: center;
+        padding: 20px; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #esconder_titulo_canvas{
+        display: none;
+    }
+    #esconder_canvas{
+        display: none;
+    }
+    
+    div.contenido{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        flex: 1;
+        background-color: rgba(245, 245, 220);
+        padding-bottom: 40px;
+        background-color: #E0F7FA;
+        padding-top: 10px;
+    }
+    .contenedor_foto_parrafo{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: stretch; 
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contenedor_foto_parrafo article.medio {
+        width: 100%;
+        
+    } 
+    article.medio{
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+    .contenedor_foto_parrafo p {
+        text-align: center; 
+        margin: auto;
+        width: 80%;
+    }
+    .foto_coche {
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        max-width: 80%;
+        height: auto;
+        border: 3px solid rgb(0, 0, 0);
+        box-shadow: 0px 6px 20px 10px rgba(0, 0, 0, 0.7);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.8s ease;
+    }
+    
+    .foto_coche:hover {
+        transform: scale(1.01); 
+        filter: brightness(1.05);
+        box-shadow: 0px 6px 10px 10px rgba(0, 0, 0, 0.7);
+        filter: grayscale(100%);
+    }
+    .nombre_coche {
+        font-size: 1.2em; 
+    }
+    article.contenedor_mapa{
+        margin-top: 60px;
+        margin: 10px auto;
+        padding: 20px;
+        max-height: 100%;
+        width: 80%;
+        max-width: 80%;
+        text-align: center;
+    }
+    
+    .separar_coches{
+        width: 80%;
+        height: 5px;
+        background: linear-gradient(to right, #020202, #ffffff, #000000);
+        border-radius: 20px;
+        display: block;
+    }
+    article.tercio{
+        margin: auto;
+        width: 80%;
+        max-width: 80%;
+        text-align: center;
+        padding-top: 20px;
+    }
+}/*Fin estilo movil*/
+
+  /* Estilos para tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    h1.titulo {
+        font-size: 25px;
+      }
+      .pegatina{
+        max-width: 30px;
+        margin-left: 10px;
+      }
+      .boton_registro a{
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.721);
+        padding: 10px;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+    .boton_registro a:hover {
+        background: #315cfd;
+        color: white;
+        font-size: 15px;
+        transform: scale(1);
+      }
+      
+      header{
+        background-color: #2196F3;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+    }
+    #logo{
+        flex-basis: 10%;
+        max-width: 120px;
+        display: none;
+        transition: transform 0.6s ease;
+    }
+    #logo:hover{
+        transform: scale(1.1);
+    }
+    #navbar {
+        background-color: #2196F3;
+        color: #fff;
+        padding: 1rem;
+        position: relative;
+    }
+    #navbar a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #navbar ul {
+        list-style: none;
+    }
+    #navbar ul li {
+        padding: 0.5rem 0;
+    }
+    
+    .menu-toggle {
+        display: block; 
+        
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: auto;
+        background-color: #2196F3;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .menu li {
+        text-align: center;
+        
+        text-align: center;
+        
+    }
+    .submenu {
+        display: none;
+        border-radius: 0px;
+        box-shadow: 0;
+    }
+    .menu.active {
+        display: flex; 
+        border-radius: 20px;
+        
+    }
+    .menu li:hover > .submenu {
+        display: block;
+        background-color: #0d497a;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+    .coche_emoji{
+        display: none;
+    }
+    .boton_pc{
+        display: none;
+    }
+    .boton_movil{
+        display: block;
+    }
+    #ocultar_formulario{
+        display: none;
+    }
+    article.medio_registro {
+        display: flex;
+        flex-direction: column;
+        margin: 0; 
+        width: auto; 
+        text-align: center;
+        padding: 20px; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #esconder_titulo_canvas{
+        display: none;
+    }
+    #esconder_canvas{
+        display: none;
+    }
+    
+    div.contenido{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        flex: 1;
+        background-color: rgba(245, 245, 220);
+        padding-bottom: 40px;
+        background-color: #E0F7FA;
+        padding-top: 10px;
+    }
+    .contenedor_foto_parrafo{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: stretch; 
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contenedor_foto_parrafo article.medio {
+        width: 100%;
+        
+    } 
+    article.medio{
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+    .contenedor_foto_parrafo p {
+        text-align: center; 
+        margin: auto;
+        width: 80%;
+    }
+    .foto_coche {
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        max-width: 80%;
+        height: auto;
+        border: 3px solid rgb(0, 0, 0);
+        box-shadow: 0px 6px 20px 10px rgba(0, 0, 0, 0.7);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.8s ease;
+    }
+    
+    .foto_coche:hover {
+        transform: scale(1.01); 
+        filter: brightness(1.05);
+        box-shadow: 0px 6px 10px 10px rgba(0, 0, 0, 0.7);
+        filter: grayscale(100%);
+    }
+    .nombre_coche {
+        font-size: 1.2em; 
+    }
+    article.contenedor_mapa{
+        margin-top: 60px;
+        margin: 10px auto;
+        padding: 20px;
+        max-height: 100%;
+        width: 80%;
+        max-width: 80%;
+        text-align: center;
+    }
+    
+    .separar_coches{
+        width: 80%;
+        height: 8px;
+        background: linear-gradient(to right, #020202, #ffffff, #000000);
+        border-radius: 20px;
+        display: block;
+    }
+    article.tercio{
+        margin: auto;
+        width: 80%;
+        max-width: 80%;
+        text-align: center;
+        padding-top: 20px;
+    }
+  }/*Fin estilo tablet*/
+  
+  /* Estilos para PC */
+  @media (min-width: 1025px) {
+    .boton_movil{
+        display: none;
+    }
+    .separar_coches{
+        display: none;
+    }
+    article.medio_registro {
+        display: flex;
+        flex-direction: column;
+        margin: 0; 
+        width: 30%;
+        max-width: 30%;
+        text-align: center;
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  }/*Fin estilo PC*/
+  
+  
+
