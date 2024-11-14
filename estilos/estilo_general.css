@@ -690,6 +690,8 @@ iframe:hover{
 }
 
 .canvas1 {
+    width: 100%;
+    height: 100%;
     background-color: none;
     display: block;
     margin: 0 auto;
@@ -697,6 +699,8 @@ iframe:hover{
     align-items: center;
 }
 .canvas2 {
+    width: 100%;
+    height: 100%;
     background-color: none;
     display: block;
     margin: 0 auto;
@@ -726,6 +730,7 @@ iframe:hover{
 }
 
 div.canvas_coches{
+    max-width: auto;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -1210,6 +1215,3 @@ audio{
         margin-right: 5%;
     }
   }/*Fin estilo PC*/
-  
-  
-
